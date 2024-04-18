@@ -171,7 +171,7 @@
             <img src="<?= base_url() ?>assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">Laksmana Chairutama</a>
+            <a href="#" class="d-block"><?= session("username"); ?></a>
           </div>
         </div>
 
@@ -240,6 +240,15 @@
             </li>
 
           </ul>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url(); ?>logout" class="nav-link">
+              <i class="nav-icon fas fa-arrow-left"></i>
+              <p>
+                Logout
+              </p>
+            </a>
+          </li>
         </nav>
         <!-- /.sidebar-menu -->
       </div>

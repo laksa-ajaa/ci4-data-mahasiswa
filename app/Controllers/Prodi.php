@@ -19,7 +19,6 @@ class Prodi extends BaseController
         ];
         return view('prodi/v_prodi', $data);
     }
-
     public function tambahdata()
     {
         $id_jurusan = $this->request->getVar('jurusan');
